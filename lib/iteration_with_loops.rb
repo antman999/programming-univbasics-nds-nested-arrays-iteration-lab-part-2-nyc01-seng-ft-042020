@@ -1,5 +1,10 @@
 def find_min_in_nested_arrays(src)
-min_num = 0
-src.each { |n| min_num = n if n < min_num }
+  array = []
+  counter = 0 
+  while counter < src.length do 
+    array.push(src[counter].min)
+    counter +=1
+end
+array
 end
 
